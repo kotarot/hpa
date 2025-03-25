@@ -7,11 +7,14 @@ dynamic = ["dependencies"]
 requires = ["setuptools>=62.6"]
 build-backend = "setuptools.build_meta"
 
+# 依存関係を requirements.txt から動的に取得する
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
+# パッケージのディレクトリを定義
 [tool.setuptools]
 packages = ["hpa"]
 
+# パッケージに含まれるデータファイル (非Pythonファイル) を定義
 [tool.setuptools.package-data]
 hpa = ["airfoil_info/*"]
