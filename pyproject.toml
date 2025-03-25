@@ -7,11 +7,11 @@ dynamic = ["dependencies"]
 requires = ["setuptools>=62.6"]
 build-backend = "setuptools.build_meta"
 
-# 依存関係を requirements.txt から動的に取得する
+# 依存関係を requirements.txt から動的に取得
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
-# パッケージのディレクトリを定義
+# パッケージのディレクトリ (hpa) を定義
 [tool.setuptools]
 packages = ["hpa"]
 
