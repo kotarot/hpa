@@ -12,3 +12,6 @@ dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools]
 packages = ["hpa"]
+
+[tool.setuptools.package-data]
+hpa = ["airfoil_info/*"]
